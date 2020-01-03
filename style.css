@@ -1,0 +1,71 @@
+  #pyramid {
+    font-family: "Courier New", monospace;
+    font-size: large;
+    color: white;
+          }
+  #logo {
+    -webkit-clip-path: polygon(20% 0%, 0% 0%, 0% 50%, 0% 80%, 0% 100%, 50% 100%, 80% 100%, 100% 100%, 100% 50%, 100% 0, 80% 0, 50% 0);
+    clip-path: polygon(20% 0%, 0% 0%, 0% 50%, 0% 80%, 0% 100%, 50% 100%, 80% 100%, 100% 100%, 100% 50%, 100% 0, 80% 0, 50% 0);
+    transition: all .3s;
+  }
+  #logo:hover {
+    -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  }
+  
+  /* Width should match that of the child element #content */
+
+  /* The canvas for our postcard, must be position:relative/overflow:hidden */
+  #sunClouds {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #sun{
+    position:absolute;
+    top:40px;
+    left:20px;
+  }
+  
+  /* Note the negative left values that hide the clouds offscreen
+   * The z-indexes define how the clouds with stack on top of each other */
+  #cloud1{
+    position:absolute;
+    top:60px;
+    left: -150px;
+    z-index:5;
+  }
+  
+  #cloud2{
+    position:absolute;
+    top:40px;
+    left: -250px;
+    z-index:4;
+  }
+  
+  #cloud3{
+    position:absolute;
+    top:25px;
+    left: -100px;
+    z-index:3;
+  }
+  
+   
+  /* The text and stamp both positioned off-screen and on top of everything */
+  #greetings{
+    position:absolute;
+    top:-51px;
+    left: 200px;
+    z-index:21;
+  }
+  
+  #stamp{
+    position:absolute;
+    top:5px;
+    left: 801px;
+    z-index: 21;
+  }
+
+  .white {
+    opacity: 0;
+  }

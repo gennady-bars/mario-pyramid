@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="style.css" />
+     <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"
+    ></script>
+  </head>
+  <body  style="background: rgb(51, 135, 247);">
+    <div id="clock"></div>
+    <img id="logo" src="logo.jpg" width="500px">
+    <div style="display: flex;">
+      <select name = "brickSymbol" id = "brickSymbol" style="background-color: rgb(204, 202, 202);">
+        <option value=""></option>
+        <option value="#">#</option>
+        <option value="@">@</option>
+        <option value="X">X</option>
+        <option value="$">$</option>
+</select>
+      let's build a pyramid:
+      <!-- <button>draw it</button> -->
+        <div><input type="range" id="slider"  style="display: inline-block;" min="0" max="20" onchange="showBricks(this)"></div>
+        <div id="bricks" style="display: inline-block; margin-left: 5px;"></div>
+        <button id="button" onclick="printPyramid();" style="width: 120px ;margin-left: 5px; border-radius: 10px; transition: background 0.8s ease, color 0.2s linear;">Click to build</button>
+    </div>
+    
+    <section id="sunClouds">
+      <div id="sun"><img src="sun.gif" ></div>
+        <div id="cloud1"><img src="cloud1.png" ></div>
+        <div id="cloud2"><img src="cloud2.png" ></div>
+        <div id="cloud3"><img src="cloud3.png" ></div>
+    
+    <h3 id="h3">Mario will come down to you soon:</h3>
+    <div id="pyramid">
+      <!-- Our pyramid will go inside here -->
+      <div id="construction">
+        <p id="p1">let's have a look...</p>
+        <p id="p2">where is the pyramid?</p>
+      </div>
+    </div>
+  
+
+  <section id="running">
+    <!-- <img src="mario.gif" id="animation" style="width: 30px; position: relative;" onclick="anime(this)"> -->
+  </section>
+  <section id="growing">
+    <img src="pot.gif" id="pot" style="width: 0px;">
+  </section>
+
+</section>
+
+    
+    <script charset="utf-8" type="text/javascript" src="mario.js"></script>
+    <script charset="utf-8" src="animate.js"></script>
+
+  </body>
+
+</html>
