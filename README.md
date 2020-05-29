@@ -1,5 +1,5 @@
 # mario-pyramid
-a JS project for animation
+a native JS project for animation
 
 ### Проект для практики анимации на нативном javascript
 
